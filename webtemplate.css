@@ -1,3 +1,7 @@
+/* Justify-content is used for aligning against row axis  */
+/* align-content is used to align items against column axis  */
+/* justify-items and align-items are used to align the items consisting in the grid  */
+
 body{
     margin: 0;
     padding: 0;
@@ -7,9 +11,16 @@ body{
     align-items: center;
 }
 
+p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
 .item {
     display: grid;
-    place-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .main {
