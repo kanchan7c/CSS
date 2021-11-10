@@ -1,4 +1,4 @@
-# CSS
+# CSS-Grid
 CSS practices and layouts creation
 
 #Purpose
