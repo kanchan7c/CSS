@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: 0 1rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+}
+
+.item {
+    border: 1px solid white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 7px;
+    background-color: brown;
+    overflow: auto;
+    height: 10rem;
+    max-height: 11rem;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    line-height: 1.2rem;
+}
+
+.item-1 {
+    background-color: aqua;  
+    /* column-start/column-end  */
+    grid-column: 3/4;
+    /* row-start/row-end  */
+    grid-row: 3/4;
+}
+.item-2 {
+    background-color: rgb(31, 92, 92);  
+    color: white;  
+}
+.item-3 {
+    background-color: rgb(22, 32, 32);  
+    color: white;  
+}
+.item-4 {
+    background-color: rgb(5, 58, 58);    
+    color: white;  
+    /* grid-area: row-start/column-start/row-end/column-end ;  */
+    grid-area: 2/1/2/4;
+}
+.item-5 {
+    background-color: rgb(208, 233, 233);   
+}
+.item-6 {
+    background-color: rgb(4, 128, 128); 
+    color: white;  
+}
+.item-7 {
+    background-color: rgb(122, 247, 247);    
+   /* for creating full width section  */
+    grid-column: 1/-1;
+}
+.item-8 {
+    background-color: rgb(116, 129, 129);    
+    color: white;  
+}
+.item-9 {
+    background-color: rgb(34, 87, 87);  
+    color: white;  
+    grid-column: 1/2;
+    grid-row: 1/2;
+}

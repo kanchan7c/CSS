@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    background-color: rgb(235, 228, 228);
+    width: 1400px;
+    height: 100vh;
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, repeat(2, 2fr), 1fr;
+    gap: 1rem;
+}
+
+article {
+    background-color: yellowgreen;
+}
+
+nav {
+    background-color: indianred;
+    grid-column: 1/-1;
+}
+
+aside{
+    background-color: yellow;
+    grid-row: 2/4;
+}
+.main-content {
+    background-color: thistle;
+    grid-column: 2/5;
+}
+
+footer {
+    background-color: tomato;
+    grid-column: 1/-1;
+}
+
